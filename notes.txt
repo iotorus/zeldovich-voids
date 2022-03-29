@@ -1,0 +1,1 @@
+Check slack and make new jupyter notebooks with the imshow command this time!
