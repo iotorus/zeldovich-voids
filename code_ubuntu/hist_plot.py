@@ -8,5 +8,10 @@ h = s.halos()
 m = []
 for i in range(1,len(h)):
     m.append(h[i]['mass'].sum())
-plt.hist(m, bins=50, log=True)
+n, bins, patches = plt.hist(m, bins=50, log=True, alpha=0.75, density=True, facecolor='green')
+plt.xlabel('Number of halos with this Mass')
+plt.ylabel('Probability')
+plt.title('Halo counts ')
+plt.grid(True)
+plt.show()
 plt.savefig('histogram.pdf')
